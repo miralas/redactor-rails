@@ -6,7 +6,9 @@ window.init_redactor = function(){
     params = csrf_param + "=" + encodeURIComponent(csrf_token);
   }
   $('.redactor').redactor(
-    { "imageUpload":"/redactor_rails/pictures?" + params,
+    { "lang":"ru"
+      "plugins":["fontcolor","fontfamily","fontsize"]
+      "imageUpload":"/redactor_rails/pictures?" + params,
       "imageGetJson":"/redactor_rails/pictures",
       "path":"/assets/redactor-rails",
       "css":"style.css"}
