@@ -82,7 +82,7 @@
 			fullpage: false,
 			css: false, // url
 
-			lang: 'en',
+			lang: 'ru',
 			direction: 'ltr', // ltr or rtl
 
 			placeholder: false,
@@ -105,7 +105,7 @@
 			autosave: false, // false or url
 			autosaveInterval: 60, // seconds
 
-			plugins: false, // array
+			plugins: ["fontcolor", "fontfamily", "fontsize"], // array
 
 			linkAnchor: false,
 			linkEmail: false,
