@@ -3,7 +3,7 @@ if (!RedactorPlugins) var RedactorPlugins = {};
 RedactorPlugins.fontfamily = {
 	init: function ()
 	{
-		var fonts = [ 'Arial', 'Cambria', 'Helvetica', 'Georgia', 'Times New Roman', 'Monospace' ];
+		var fonts = [ 'Cambria', 'Arial', 'Helvetica', 'Georgia', 'Times New Roman', 'Monospace' ];
 		var that = this;
 		var dropdown = {};
 
@@ -24,4 +24,3 @@ RedactorPlugins.fontfamily = {
 	{
 		this.inlineRemoveStyle('font-family');
 	}
-};
