@@ -24,3 +24,4 @@ RedactorPlugins.fontfamily = {
 	{
 		this.inlineRemoveStyle('font-family');
 	}
+}
