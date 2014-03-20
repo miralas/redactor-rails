@@ -11,7 +11,6 @@ class RedactorRails::PicturesController < ApplicationController
     @picture = RedactorRails.picture_model.new
 
     file = params[:file]
-    version = params[:version]
     @picture.data = RedactorRails::Http.normalize_param(file, request)
     if @picture.respond_to?(RedactorRails.devise_user)
       @picture.send("#{RedactorRails.devise_user}=", redactor_current_user)
@@ -19,14 +18,7 @@ class RedactorRails::PicturesController < ApplicationController
     end
 
     if @picture.save
-      if version 
-        file_link = @picture.send(:url, version)
-      else 
-        file_link = @picture.url
-      end 
-
-      render :text => { :filelink => file_link }.to_json 
-
+      render :text => { :filelink => @picture.url }.to_json
     else
       render :nothing => true
     end
