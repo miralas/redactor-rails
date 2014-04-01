@@ -8,6 +8,7 @@ window.init_redactor = function(){
   $('.redactor').redactor(
     { "lang":"ru",
       "plugins":["fontcolor","fontfamily","fontsize"],
+      "fileUpload":"/redactor_rails/files?" + params,
       "imageUpload":"/redactor_rails/pictures?" + params,
       "imageGetJson":"/redactor_rails/pictures",
       "path":"/assets/redactor-rails",

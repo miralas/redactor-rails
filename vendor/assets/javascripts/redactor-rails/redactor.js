@@ -116,7 +116,7 @@
 			imageGetJson: false, // url (ex. /folder/images.json ) or false
 
 			imageUpload: false, // url
-			fileUpload: false, // url
+			fileUpload: '/redactor_rails/files', // url
 			clipboardUpload: true, // or false
 			clipboardUploadUrl: false, // url
 			dragUpload: true, // false
